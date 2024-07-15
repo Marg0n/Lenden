@@ -12,7 +12,8 @@ There will be 3 roles here: One for User and one for Agent, one for Admin
 
 ## Features
 
-For User:
+### For User:
+
 1.	Registration:
 ○	An user needs to give these Inputs for the registration: Name, 5-digit PIN (must be number), Mobile Number, Email. Initially user status will be pending which will be approved by the admin later.  
 ○	Use JWT for authentication and hash PINs for security (you may use bcrypt.js for pin hashing). PINs must be hashed before saving it in the database. Plain PINs must not be saved in the database. And for verifying PINs you have to compare the hashed password saved in DB to the password from the input.
@@ -37,7 +38,9 @@ For User:
 7.	Transactions History:
 ○	JWT Verification is required to see transaction history.
 ○	Users can view their last 10 transactions.
-For Agent:
+
+### For Agent:
+
 1.	Registration:
 a.	An agent needs to give these Inputs for the registration: Name, 5-digit PIN(must be number), Mobile Number, Email. Initially agent status will be pending which will be approved by the admin later.  
 b.	After the account is activated by admin approval, the agent will get a  Bonus of  10,000 Taka which will be credited to the agent’s balance. This is a one time bonus for new agents.
@@ -51,7 +54,9 @@ a.	Agents can check their account balances at any time.
 5.	Transactions History:
 a.	JWT Verification is required to see transaction history.
 b.	Agents can view their last 20 transactions.
-Admin:
+
+### For Admin:
+
 1.	Secure Login:
 ○	Admin can log in using their Mobile Number/Email and PIN.
 ○	Use JWT for authentication and hash PINs for security (you may use bcrypt.js for pin hashing) 
