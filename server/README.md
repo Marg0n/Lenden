@@ -1,10 +1,10 @@
 # Medi House Server
 
-Server side of A robust Diagnostic Center Management System, a full-stack web application that effectively manages appointments, patient records, test results, and administrative tasks for a diagnostic center.
+Server side of A basic MFS application (like bKash or Nagad) using React.js, Node.js, Express.js, and MongoDB. Implementing essential features: user authentication, send money, cash-out, and balance inquiries. Ensuring a simple and secure web interface.
 
 Live site:
 
-- [Live Site](https://medihouse.netlify.app)
+- [Live Site]()
 
 Resources:
 
