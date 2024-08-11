@@ -119,10 +119,7 @@ async function run() {
     // =================================
     // DB Collections' Connection
     // =================================
-    const usersCollection = client.db("mediHouseDB").collection("users");
-    const testsCollection = client.db("mediHouseDB").collection("tests");
-    const bookingsCollection = client.db("mediHouseDB").collection("bookings");
-    const bannersCollection = client.db("mediHouseDB").collection("banners");
+    const usersCollection = client.db("lendenDB").collection("users");
 
 
 
@@ -184,7 +181,7 @@ async function run() {
     // =================================
 
     // Get all users' data 
-    app.get('/users', verifyToken, verifyAdmin, async (req, res) => {
+    app.get('/users', verifyToken, async (req, res) => {
       const results = await usersCollection.find().toArray();
       // console.log(results)
       res.send(results);

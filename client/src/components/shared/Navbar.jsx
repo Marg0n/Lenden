@@ -1,10 +1,22 @@
 
+import { Link, NavLink } from 'react-router-dom';
 import logo from '/লেনদেন.gif';
+import { GiExitDoor } from "react-icons/gi";
 
 const Navbar = () => {
+
+    const lists = <>
+        <li>
+            <NavLink>Help</NavLink>
+        </li>
+        <li>
+            <NavLink>About</NavLink>
+        </li>
+    </>
+
     return (
         <>
-            <div className="navbar bg-base-100 shadow-2xl">
+            <div className="navbar bg-base-100 shadow-2xl px-8">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,39 +36,26 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            {lists}
                         </ul>
                     </div>
 
-                    <img className="w-20 h-20 rounded-full " src={logo} alt="logo" />
+                    {/* logo */}
+                    <Link to='/'>
+                        <img className="w-20 h-20 rounded-3xl " src={logo} alt="logo" />
+                    </Link>
 
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        {lists}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
-                </div>
+                <Link to='/login' className="navbar-end">
+                    <button className="btn">
+                        Login <GiExitDoor />
+                    </button>
+                </Link>
             </div>
         </>
     );

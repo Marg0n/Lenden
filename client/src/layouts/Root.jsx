@@ -6,7 +6,7 @@ import Navbar from "../components/shared/Navbar";
 
 const Root = () => {
     return (
-        <div className="font-lato">
+        <div className="font-lato font-serif">
             {/* navbar */}
             <Navbar/>
 

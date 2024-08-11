@@ -96,3 +96,4 @@ UI Instructions:
 - [react-toastify](https://www.npmjs.com/package/react-toastify)
 - [AXIOS](https://axios-http.com/docs/intro)
 - [React Awesome Reveal](https://www.npmjs.com/package/react-awesome-reveal)
+- [React Tooltip](https://react-tooltip.com)
