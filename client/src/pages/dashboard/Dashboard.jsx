@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
-import Loader from "../components/shared/Loader";
 import DashboardNav from './../../components/shared/DashboardNav';
+import useAuth from "../../hooks/useAuth";
+import Loader from "../../components/shared/Loader";
 
 
 
